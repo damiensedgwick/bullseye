@@ -47,7 +47,8 @@ struct ContentView: View {
         
         let roundedValue = Int(self.sliderValue.rounded())
         
-        return Alert(title: Text("Hello There!"), message: Text("The slider value is: \(roundedValue).\n" + "You scored: \(self.game.points(sliderValue: roundedValue))"))
+        return Alert(title: Text("Hello There!"),
+                     message: Text("The slider value is: \(roundedValue).\n" + "You scored: \(self.game.points(sliderValue: roundedValue))"))
       })
     }
     .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
