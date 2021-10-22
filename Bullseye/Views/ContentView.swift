@@ -18,12 +18,18 @@ struct ContentView: View {
       
       VStack {
         InstructionsView(game: $game)
-          .padding(.bottom, 100)
+          .padding(.bottom, isAlertVisible ? 0 : 100)
 
-        HitMeButton(isAlertVisible: $isAlertVisible, sliderValue: $sliderValue, game: $game)
+        if isAlertVisible {
+          PointsView(isAlertVisible: $isAlertVisible, sliderValue: $sliderValue, game: $game)
+        } else  {
+          HitMeButton(isAlertVisible: $isAlertVisible, sliderValue: $sliderValue, game: $game)
+        }
       }
 
-      SliderView(sliderValue: $sliderValue)
+      if !isAlertVisible {
+        SliderView(sliderValue: $sliderValue)
+      }
     }
   }
 }
@@ -58,35 +64,30 @@ struct HitMeButton: View {
   @Binding var isAlertVisible: Bool
   @Binding var sliderValue: Double
   @Binding var game: Game
-  
+
   var body: some View {
     Button(action: {
-      isAlertVisible = true
+      withAnimation {
+        isAlertVisible = true
+      }
     }) {
       Text("Hit me".uppercased())
         .bold()
         .font(.title3)
     }
-    .padding(20.0)
-    .background(ZStack {
-      Color("ButtonColor")
-      LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.3), Color.blue]), startPoint: .top, endPoint: .bottom)
-    })
-    .foregroundColor(Color.white)
-    .cornerRadius(21.0)
-    .overlay(
-      RoundedRectangle(cornerRadius: 21.0)
-        .strokeBorder(Color.white, lineWidth: 2.0)
-    )
-    .alert(isPresented: $isAlertVisible, content: {
-      
-      let roundedValue = Int(self.sliderValue.rounded())
-      let points = game.points(sliderValue: roundedValue)
-      
-      return Alert(title: Text("Hello there!"), message: Text("The slider's value is \(roundedValue).\n" + "You scored \(points)"), dismissButton: .default(Text("Awesome!")) {
-        game.startNewRound(points: points)
-      })
-    })
+      .padding(20.0)
+      .background(
+        ZStack {
+          Color("ButtonColor")
+          LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.3), Color.clear]), startPoint: .top, endPoint: .bottom)
+        }
+      )
+      .foregroundColor(Color.white)
+      .cornerRadius(21.0)
+      .overlay(
+        RoundedRectangle(cornerRadius: 21.0)
+          .strokeBorder(Color.white, lineWidth: 2.0)
+      )
   }
 }
 
