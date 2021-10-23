@@ -82,7 +82,7 @@ struct ButtonText: View {
       .background(
         Color.accentColor
       )
-      .cornerRadius(21.0)
+      .cornerRadius(Constants.General.roundedRectCornerRadius)
   }
 }
 
