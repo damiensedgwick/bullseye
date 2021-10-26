@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B1BD50E271600AF003C5D6B /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BD50D271600AF003C5D6B /* TextViews.swift */; };
 		2B1BD51627160CA2003C5D6B /* RoundViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BD51527160CA2003C5D6B /* RoundViews.swift */; };
+		2B90D60127287FDA004DA830 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90D60027287FDA004DA830 /* LeaderboardView.swift */; };
 		2B91B4FF27248255006D8C8A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B91B4FE27248255006D8C8A /* Constants.swift */; };
 		2B9F3F6927135B0C00F35580 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F3F6827135B0C00F35580 /* Game.swift */; };
 		2B9F3F71271360C300F35580 /* BullseyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9F3F70271360C300F35580 /* BullseyeTests.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		2B1BD50D271600AF003C5D6B /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		2B1BD51527160CA2003C5D6B /* RoundViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundViews.swift; sourceTree = "<group>"; };
+		2B90D60027287FDA004DA830 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		2B91B4FE27248255006D8C8A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2B9F3F6827135B0C00F35580 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		2B9F3F6E271360C300F35580 /* BullseyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullseyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,7 @@
 				2B1BD51527160CA2003C5D6B /* RoundViews.swift */,
 				2BAE25C02721B33D00FE6F8B /* BackgroundView.swift */,
 				2BADFFE42723315100FCFAB6 /* PointsView.swift */,
+				2B90D60027287FDA004DA830 /* LeaderboardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				2B1BD51627160CA2003C5D6B /* RoundViews.swift in Sources */,
 				2BB5A2A6270CAEA600021344 /* ContentView.swift in Sources */,
 				2B91B4FF27248255006D8C8A /* Constants.swift in Sources */,
+				2B90D60127287FDA004DA830 /* LeaderboardView.swift in Sources */,
 				2B1BD50E271600AF003C5D6B /* TextViews.swift in Sources */,
 				2BADFFE52723315100FCFAB6 /* PointsView.swift in Sources */,
 				2B9F3F6927135B0C00F35580 /* Game.swift in Sources */,
