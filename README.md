@@ -18,4 +18,4 @@ To run the simulator, you will need Xcode, I use v13.1
 
 ## Footnote
 
-This app is apart of a course.
+This app is apart of a course that you can find at [Ray Wenderlich](https://www.raywenderlich.com/whats-new)
