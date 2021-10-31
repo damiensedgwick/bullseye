@@ -12,7 +12,9 @@ To run the simulator, you will need Xcode, I use v13.1
 
 ## Demo
 
-![](.github/images/Sim1.png) ![](.github/images/Sim2.png) ![](.github/images/Sim3.png) ![](.github/images/Sim4.png)
+![](.github/images/Sim1.png) ![](.github/images/Sim2.png)
+
+![](.github/images/Sim3.png) ![](.github/images/Sim4.png)
 
 ## Footnote
 
